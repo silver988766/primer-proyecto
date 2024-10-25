@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+</head>
+<body>
+    <h1>Bienvenido a la Página del Servidor</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Subir archivo:</label>
+        <input type="file" name="file" id="file">
+        <button type="submit">Subir</button>
+    </form>
+    <br>
+    <a href="/logs">Ver Logs</a>
+    <br>
+    <a href="/restart-service">Reiniciar Servicio</a>
+</body>
+</html>

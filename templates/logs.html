@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs del Servidor</title>
+</head>
+<body>
+    <h1>Logs del Servidor</h1>
+    <ul>
+        {% for log_file in log_files %}
+            <li>{{ log_file }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Volver</a>
+</body>
+</html>
