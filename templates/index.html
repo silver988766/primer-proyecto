@@ -2,18 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Página Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a la Página del Servidor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Bienvenido a la Página del Servidor</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="file">Subir archivo:</label>
-        <input type="file" name="file" id="file">
-        <button type="submit">Subir</button>
-    </form>
-    <br>
-    <a href="/logs">Ver Logs</a>
-    <br>
-    <a href="/restart-service">Reiniciar Servicio</a>
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenido a la Página del Servidor</h1>
+
+        <h2 class="mt-4">Subir archivo</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="mb-4">
+            <div class="form-group">
+                <input type="file" name="file" class="form-control-file">
+            </div>
+            <button type="submit" class="btn btn-primary">Subir</button>
+        </form>
+
+        <h2 class="mt-4">Opciones</h2>
+        <div class="mb-3">
+            <a href="/logs" class="btn btn-info">Ver Logs</a>
+            <a href="/restart-service" class="btn btn-warning">Reiniciar Servicio</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

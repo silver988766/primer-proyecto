@@ -1,0 +1,34 @@
+body {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+h1, h2 {
+    color: #f8f9fa; /* Colores de encabezados más claros para mejorar la visibilidad */
+}
+
+.container {
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón primario */
+    border-color: #007bff; /* Color del borde del botón primario */
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Color del botón de información */
+    border-color: #17a2b8; /* Color del borde del botón de información */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Color del botón de advertencia */
+    border-color: #ffc107; /* Color del borde del botón de advertencia */
+}
+
+/* Estilo adicional para formularios */
+.form-control-file {
+    background-color: #343a40; /* Fondo oscuro para el input de archivo */
+    color: white; /* Texto blanco en el input de archivo */
+}
+
