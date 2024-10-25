@@ -1,34 +1,36 @@
 body {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
 }
 
-h1, h2 {
-    color: #f8f9fa; /* Colores de encabezados más claros para mejorar la visibilidad */
+#wrapper {
+    display: flex;
 }
 
-.container {
-    padding: 20px; /* Espaciado interno del contenedor */
+#sidebar-wrapper {
+    min-height: 100vh; /* Asegura que la barra lateral ocupe toda la altura de la pantalla */
+    width: 250px; /* Ancho fijo para la barra lateral */
 }
 
-.btn-primary {
-    background-color: #007bff; /* Color del botón primario */
-    border-color: #007bff; /* Color del borde del botón primario */
+.sidebar-heading {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #343a40; /* Color de fondo para el encabezado de la barra lateral */
 }
 
-.btn-info {
-    background-color: #17a2b8; /* Color del botón de información */
-    border-color: #17a2b8; /* Color del borde del botón de información */
+.list-group-item {
+    color: #fff; /* Color del texto de los elementos de la lista */
 }
 
-.btn-warning {
-    background-color: #ffc107; /* Color del botón de advertencia */
-    border-color: #ffc107; /* Color del borde del botón de advertencia */
+.list-group-item:hover {
+    background-color: #007bff; /* Color de fondo al pasar el ratón */
 }
 
-/* Estilo adicional para formularios */
-.form-control-file {
-    background-color: #343a40; /* Fondo oscuro para el input de archivo */
-    color: white; /* Texto blanco en el input de archivo */
+#page-content-wrapper {
+    width: 100%; /* Hace que el contenido principal ocupe todo el ancho restante */
+    padding: 20px; /* Espaciado alrededor del contenido */
 }
+
+}
+
 

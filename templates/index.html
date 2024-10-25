@@ -8,21 +8,30 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Bienvenido a la Página del Servidor</h1>
+    <div id="wrapper">
+        <!-- Barra lateral -->
+        <div id="sidebar-wrapper" class="bg-dark">
+            <div class="sidebar-heading text-white">Menú</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark"><a href="/upload" class="text-white">Subir Archivo</a></li>
+                <li class="list-group-item bg-dark"><a href="/logs" class="text-white">Ver Logs</a></li>
+                <li class="list-group-item bg-dark"><a href="/restart-service" class="text-white">Reiniciar Servicio</a></li>
+            </ul>
+        </div>
 
-        <h2 class="mt-4">Subir archivo</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data" class="mb-4">
-            <div class="form-group">
-                <input type="file" name="file" class="form-control-file">
+        <!-- Contenido principal -->
+        <div id="page-content-wrapper">
+            <div class="container mt-5">
+                <h1 class="text-center">Bienvenido a la Página del Servidor</h1>
+
+                <h2 class="mt-4">Subir archivo</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data" class="mb-4">
+                    <div class="form-group">
+                        <input type="file" name="file" class="form-control-file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subir</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary">Subir</button>
-        </form>
-
-        <h2 class="mt-4">Opciones</h2>
-        <div class="mb-3">
-            <a href="/logs" class="btn btn-info">Ver Logs</a>
-            <a href="/restart-service" class="btn btn-warning">Reiniciar Servicio</a>
         </div>
     </div>
 
@@ -31,4 +40,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
 
